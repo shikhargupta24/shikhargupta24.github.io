@@ -1,117 +1,61 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Body Styling */
 body {
-  background-color: #fdf9f9;
-  color: #333;
-  text-align: center;
-}
+    margin: 0;
+    font-family: Arial;
+    background-color: #fdf9f9;
 
-/* Header Styling */
-header {
-  background-color: #7d1919;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-h1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 3rem;
-  margin: 10px 0;
-}
-
-h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h3 {
-  font-family: cursive;
-}
-
-/* Navbar Styling */
-.navbar {
-  background-color: rgb(224, 166, 166);
-  padding: 10px;
-}
-
-.navbar nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.navbar nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  transition: background 0.3s ease-in-out;
-}
-
-.navbar nav a:hover {
-  background-color: #c25b5b;
-  border-radius: 5px;
-}
-
-/* Section Styling */
-section {
-  text-align: left;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* Flexbox Container */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Box Styling */
-.box {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 45%;
-  min-width: 300px;
-  text-align: left;
-}
-
-/* Make images responsive */
-.box img {
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-  height: auto;
-}
-
-/* Link Styling */
-a {
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .box {
-      width: 100%; /* Full width on smaller screens */
   }
+header {
+    background-color: #7d1919;
+    margin: 2;
+    border: #7d1919;;
+    padding: 10px; 
+    text-align: center;
+}
+
+h1 {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: xxx-large;
+}
+h2 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+ h3{ font-family:cursive }
+
+
+
+.navbar {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: rgb(224, 166, 166);
+padding: 10px;
+color: white;
+text-align: right;
+
+}
+
+ .box{text-align: left;
+    padding-left: 15px;
+    background-color: #cfbcbc;
+
+
+  }
+
+  .box1 {
+    background-color:#cfbcbc;
+  }
+
+
+  #Aboutme{padding: 10px}
+
+#Photos{
+  background-color: #e2caca;
+  padding: 15px;
+
+}
+#NotableAlum {background-color: #885f5f;
+}
+
+#Clubs { background-color: #885f5f;}
+
+a{color:#000000;
+padding:5px;
+}
+
+#flex{
+  align-items: center;
 }
