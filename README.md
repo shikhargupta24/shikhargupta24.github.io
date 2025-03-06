@@ -8,3 +8,7 @@ In some parts, Rueh and Keith worked together via one laptop but it is fine to s
 
 Keith:
 ![61ff07818f7640eefd471ce96cbb5061](https://github.com/user-attachments/assets/fa9e6157-93f6-4bc1-8dae-230088f8773f)
+
+
+Rufaida: 
+![compsciscreenshot](https://github.com/user-attachments/assets/ebd24dea-6f43-4327-9ec7-2cc7cf8aea64)
