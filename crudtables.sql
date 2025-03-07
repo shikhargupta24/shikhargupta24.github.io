@@ -29,3 +29,45 @@ CREATE TABLE `events` (
     FOREIGN KEY (club_id) REFERENCES clubs(club_id) ON DELETE CASCADE  -- Link events to a club
 );
 
+
+INSERT INTO `events` (club_id, event_name, description, event_date, location)
+VALUES (1, 'Coding Bootcamp', 'A workshop on coding for beginners.', '2025-04-15 09:00:00', 'Room 101, Main Building');
+
+SELECT e.event_name, e.description, e.event_date, e.location
+FROM `events` e
+JOIN `clubs` c ON e.club_id = c.club_id
+WHERE c.username = 'club_admin';  -- Assuming 'club_admin' is the username
+
+SELECT event_name, description, event_date, location FROM `events`;
+
+
+UPDATE `events`
+SET event_name = 'Advanced Coding Bootcamp', event_date = '2025-04-17 10:00:00', location = 'Room 102, Main Building'
+WHERE event_id = 1;  -- Update the event with event_id = 1
+
+
+DELETE FROM `events` WHERE event_id = 1;  -- Delete the event with event_id = 1
+
+
+--FLOW EXAMPLE 
+
+INSERT INTO `users` (username, password)
+VALUES ('club_admin', 'hashed_password_here');  -- Replace with a securely hashed password
+
+INSERT INTO `clubs` (club_name, description, username)
+VALUES ('Tech Club', 'A club for tech enthusiasts', 'club_admin');
+
+INSERT INTO `events` (club_id, event_name, description, event_date, location)
+VALUES (1, 'AI Workshop', 'Workshop on Artificial Intelligence basics', '2025-05-10 14:00:00', 'Room 203, Science Building');
+
+SELECT e.event_name, e.description, e.event_date, e.location
+FROM `events` e
+JOIN `clubs` c ON e.club_id = c.club_id
+WHERE c.username = 'club_admin';  -- View events by the club of 'club_admin'
+
+UPDATE `events`
+SET event_name = 'AI and Robotics Workshop', event_date = '2025-05-12 14:00:00'
+WHERE event_id = 1;
+
+DELETE FROM `events` WHERE event_id = 1;  -- Delete the event with event_id = 1
+
