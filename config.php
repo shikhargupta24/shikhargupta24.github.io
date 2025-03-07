@@ -1,7 +1,7 @@
 <?php
 
 //user account details on phpMyAdmin
-$host = "localhost"
+$host = "localhost";
 $db = "app-db";
 $user = "root";
 $pass ="";
