@@ -13,7 +13,7 @@ VALUES
  ('Keith', 'Penutbuttercar'),
 
  ('Sgupta', 'Caramellane10');
-
+ 
 
 CREATE TABLE `events` (
     event_id INT AUTO_INCREMENT PRIMARY KEY,   
