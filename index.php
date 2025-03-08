@@ -60,6 +60,11 @@ session_start();
             <a href="https://www.wesleyan.edu/about/" target="Wesleyan Page">Wesleyan Main Page</a>
         </p>
     </div>
+    <?php if(isset($_SESSION['username'])) ?>
+     <div style="padding: 10px; border-bottom: 1px solid #ccc;">
+        Logged in as: <strong><?= htmlspecialchars($_SESSION['username']) ?></strong> 
+        | <a href="logout.php">Logout</a>
+    </div>
     </section>
 
     <div class="flex-container">
