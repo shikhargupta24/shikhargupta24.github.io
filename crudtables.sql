@@ -14,7 +14,7 @@ CREATE TABLE `clubs` (
     FOREIGN KEY (username) REFERENCES users(username) ON DELETE CASCADE  -- Links club to the user
 );
 
-
+  
 
 
 CREATE TABLE `events` (
