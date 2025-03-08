@@ -1,31 +1,33 @@
 
+CREATE DATABASE if0_38470935_wes_app;
 
-CREATE TABLE 'users' (
-    username VARCHAR(255) PRIMARY KEY, 
-    password_ VARCHAR(255) NOT NULL);
+CREATE TABLE  `users` (
+    username VARCHAR(255) PRIMARY KEY NOT NULL, 
+    password VARCHAR(255) NOT NULL);
 
 
-CREATE TABLE `clubs` (
-    club_id INT AUTO_INCREMENT PRIMARY KEY,  -- Unique ID for each club
-    club_name VARCHAR(100) NOT NULL,         -- Name of the club
-    club_description TEXT,                        -- Description of the club
-    username VARCHAR(50),                    -- Foreign key referencing the users table
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- When the club was created
-    FOREIGN KEY (username) REFERENCES users(username) ON DELETE CASCADE  -- Links club to the user
-);
+INSERT INTO  `users` (username, password)
+VALUES
+ ('Rkhan', 'Chocolate240'),
 
-  
+ ('Keith', 'Penutbuttercar'),
 
+ ('Sgupta', 'Caramellane10');
+ 
 
 CREATE TABLE `events` (
-    event_id INT AUTO_INCREMENT PRIMARY KEY,   -- Unique ID for each event
-    club_id INT,                               -- Foreign key linking to clubs
-    event_name VARCHAR(255) NOT NULL,           -- Name of the event
-    event_description TEXT,                          -- Description of the event
-    event_date DATETIME NOT NULL,              -- Date and time of the event
-    location_place VARCHAR(255),                     -- Event location
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- When the event was created
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  -- When the event was last updated
-    FOREIGN KEY (club_id) REFERENCES clubs(club_id) ON DELETE CASCADE  -- Link events to a club
+    event_id INT AUTO_INCREMENT PRIMARY KEY,   
+    event_name VARCHAR(255) NOT NULL,           
+    event_date DATETIME NOT NULL,             
+    location_p VARCHAR(255) NOT NULL,                  
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  
+    username VARCHAR(255) NOT NULL,  -- Add this column to reference 'users'
+    FOREIGN KEY (username) REFERENCES users(username) ON DELETE CASCADE  
 );
 
+
+INSERT INTO `events` (`event_id`, `event_name`, `event_date`, `location_p`, `created_at`, `updated_at`, `username`) VALUES
+(1, 'AI Workshop', '2025-03-10 14:00:00', 'Room 101, Tech Building', '2025-03-02 18:00:00', '2025-03-02 18:00:00', ' SGupta'),
+(3, 'Book Reading Session', '2025-03-12 16:00:00', 'Library Hall', '2025-03-01 18:00:00', '2025-03-01 18:00:00', ' Rkhan'),
+(2, 'Painting Exhibition', '2025-03-15 18:00:00', 'Art Gallery', '2025-03-01 18:00:00', '2025-03-01 18:00:00', 'Keith');
