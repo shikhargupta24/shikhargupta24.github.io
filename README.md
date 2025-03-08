@@ -26,13 +26,13 @@ After going through the process for xamp, and then opening up the xamp control p
 Click new, and add a new database named wes-db. afterward, you will open the database and click new to creat a table names users. on the top right, toggle over to the SQl button and copy and paste the users table from the crudtables.sql document.
 ex) CREATE TABLE  `users` (
     username VARCHAR(255) PRIMARY KEY, 
-    password_ VARCHAR(255) NOT NULL);
+    password VARCHAR(255) NOT NULL);
 Click Go.
 
 
 Click new again and add a table named events. toggle the sql button and add the create table code for the events table. 
 after ward, to add in the data values, go on the users table and back to the sql button then copy and paste one data value ex) 
-INSERT INTO  `users` (username, password_)
+INSERT INTO  `users` (username, password)
 VALUES
  ('Rkhan', 'hashed password');
   then click go and repeat for the rest of the values induvidually. 
