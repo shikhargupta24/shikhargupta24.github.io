@@ -2,7 +2,7 @@
 
 CREATE TABLE  `users` (
     username VARCHAR(255) PRIMARY KEY, 
-    password_ VARCHAR(255) NOT NULL);
+    password VARCHAR(255) NOT NULL);
 
 
 CREATE TABLE `events` (
