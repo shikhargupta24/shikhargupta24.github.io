@@ -1,8 +1,19 @@
 
+CREATE DATABASE if0_38470935_wes_app;
 
 CREATE TABLE  `users` (
     username VARCHAR(255) PRIMARY KEY NOT NULL, 
-    password_ VARCHAR(255) NOT NULL);
+    password VARCHAR(255) NOT NULL);
+
+
+INSERT INTO  `users` (username, password)
+VALUES
+ ('Rkhan', 'hashed password');
+INSERT INTO  `users` (username, password)
+VALUES ('Keith', 'hashed password');
+INSERT INTO  `users` (username, password)
+VALUES
+ ('Sgupta', 'hashed password');
 
 
 CREATE TABLE `events` (
@@ -17,14 +28,6 @@ CREATE TABLE `events` (
 );
 
 
-INSERT INTO  `users` (username, password_)
-VALUES
- ('Rkhan', 'hashed password');
-INSERT INTO  `users` (username, password_)
-VALUES ('Keith', 'hashed password');
-INSERT INTO  `users` (username, password_)
-VALUES
- ('Sgupta', 'hashed password');
 
 
 
