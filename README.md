@@ -29,12 +29,16 @@ ex) CREATE TABLE  `users` (
     password VARCHAR(255) NOT NULL);
 Click Go.
 
-
-Click new again and add a table named events. toggle the sql button and add the create table code for the events table. 
-after ward, to add in the data values, go on the users table and back to the sql button then copy and paste one data value ex) 
-INSERT INTO  `users` (username, password)
+after ward, to add in the data values, go on the users table and back to the sql button then copy and paste the INSERT data values
+ex) INSERT INTO  `users` (username, password)
 VALUES
  ('Rkhan', 'hashed password');
-  then click go and repeat for the rest of the values induvidually. 
-  Repeat the same for the events table values and add them in one by one. 
+ click go.
 
+
+
+Click new again and add a table named events. toggle the sql button and add the create table code for the events table. 
+after ward, to add in the data values, go on the events table and back to the sql button then copy and paste the INSERT data values
+  then click go. 
+
+all of this code is found in the crudtables.sql
