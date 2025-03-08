@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'eloc'  => $locationP,
             'uname' => $_SESSION['username']
         ]);
-        header("Location: read_events.php");
+        header("Location: read.php");
         exit;
     }
 }
