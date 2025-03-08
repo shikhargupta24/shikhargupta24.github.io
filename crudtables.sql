@@ -8,12 +8,11 @@ CREATE TABLE  `users` (
 
 INSERT INTO  `users` (username, password)
 VALUES
- ('Rkhan', 'hashed password');
-INSERT INTO  `users` (username, password)
-VALUES ('Keith', 'hashed password');
-INSERT INTO  `users` (username, password)
-VALUES
- ('Sgupta', 'hashed password');
+ ('Rkhan', 'Chocolate240'),
+
+ ('Keith', 'Penutbuttercar'),
+
+ ('Sgupta', 'Caramellane10');
 
 
 CREATE TABLE `events` (
@@ -28,14 +27,7 @@ CREATE TABLE `events` (
 );
 
 
-
-
-
-INSERT INTO `events` (`event_id`, `event_name`, `event_date`, `location_p`, `created_at`, `updated_at`, `username`) 
-VALUES (NULL, 'AI Workshop', '2025-03-10 14:00:00', 'Room 101, Tech Building', '2025-03-02 10:00:00', '2025-03-02 10:00:00', NULL);
-
-INSERT INTO `events` (event_id, event_name, event_date, location_p, created_at, updated_at) 
-VALUES (3, 'Book Reading Session', '2025-03-12 16:00:00', 'Library Hall', '2025-03-01 10:00:00', '2025-03-01 10:00:00');
-
-INSERT INTO `events` (`event_id`, `event_name`, `event_date`, `location_p`, `created_at`, `updated_at`, `username`)
- VALUES (NULL, 'Painting Exhibition', '2025-03-15 18:00:00', 'Art Gallery', '2025-03-01 10:00:00', '2025-03-01 10:00:00', NULL);
+INSERT INTO `events` (`event_id`, `event_name`, `event_date`, `location_p`, `created_at`, `updated_at`, `username`) VALUES
+(1, 'AI Workshop', '2025-03-10 14:00:00', 'Room 101, Tech Building', '2025-03-02 18:00:00', '2025-03-02 18:00:00', ' SGupta'),
+(3, 'Book Reading Session', '2025-03-12 16:00:00', 'Library Hall', '2025-03-01 18:00:00', '2025-03-01 18:00:00', ' Rkhan'),
+(2, 'Painting Exhibition', '2025-03-15 18:00:00', 'Art Gallery', '2025-03-01 18:00:00', '2025-03-01 18:00:00', 'Keith');
