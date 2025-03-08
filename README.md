@@ -16,3 +16,10 @@ Rufaida:
 
 Shikhar:
 ![Image 3-6-25 at 7 51 PM](https://github.com/user-attachments/assets/7f829c9d-e2f5-494e-b473-c08fdcfd75f2)
+
+
+MYSQL FOLLOW UP
+Referring to crudtables.sql, the code is going to be used to implement tables and sql queries into the database. 
+After going through the process for xamp, and then opening up the xamp control panel and starting apache and mysql, phpmyadmin will be used to the create the database. 
+Click new, and add a new database named wes-db. afterward, you will open the database and click new to creat a table names users. on the top right, toggle over to the SQl button and copy and paste the users table from the crudtables.sql document. Click Go. Click new again and add a table named events. toggle the sql button and add the create table code for the events table. 
+after ward, to add in the data values, go on the users table and back to the sql button then copy and paste one data value ex) 
