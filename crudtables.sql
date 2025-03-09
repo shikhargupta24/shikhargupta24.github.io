@@ -1,5 +1,5 @@
 
-CREATE DATABASE if0_38470935_wes_app;
+CREATE DATABASE app_db;
 
 CREATE TABLE  `users` (
     username VARCHAR(255) PRIMARY KEY NOT NULL, 
