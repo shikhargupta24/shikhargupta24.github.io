@@ -1,6 +1,8 @@
 # homework-2-comp-333
 Homework 2 for Computer Science 333
 
+Keith,Rueh,Shikhar its a 40/40/20 split
+
 Creating an advertisement for Wesleyan University using HTML and CSS
 
 Link:https://wesleyanapp.infinityfreeapp.com/login.php
