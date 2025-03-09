@@ -1,9 +1,9 @@
-# homework-1-comp-333
-Homework 1 for Computer Science 333
+# homework-2-comp-333
+Homework 2 for Computer Science 333
 
 Creating an advertisement for Wesleyan University using HTML and CSS
 
-In some parts, Rueh and Keith worked together via one laptop but it is fine to say equal contribution amongst the three members I would analyze the issue section for further details.
+Going by order of the the Names Keith,Rueh,Shikar its a 40/40/20 split. 
 
 Link:https://wesleyanapp.infinityfreeapp.com/login.php
 
