@@ -1,10 +1,10 @@
 <?php
 
 //user account details on phpMyAdmin
-$host = "localhost";
-$db = "app-db";
-$user = "root";
-$pass ="";
+$host = 'sqlXXX.infinityfree.com';
+$db = "if0_38470935_app_db";
+$user = "if0_38470935";
+$pass ="qVWW0dMIywM";
 
 try {
     //using PDO
