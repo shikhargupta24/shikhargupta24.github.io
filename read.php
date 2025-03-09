@@ -18,7 +18,7 @@ $events = $stmt->fetchAll();
 <body>
     <p>Logged in as: <strong><?= htmlspecialchars($_SESSION['username']) ?></strong> | 
     <a href="logout.php">Logout</a> | 
-    <a href="create_event.php">Create Event</a></p>
+    <a href="create.php">Create Event</a></p>
 
     <h1>All Events</h1>
     <table border="1">
@@ -39,9 +39,9 @@ $events = $stmt->fetchAll();
             <td><?= htmlspecialchars($ev['username']) ?></td>
             <td>
                 <?php if ($ev['username'] === $_SESSION['username']): ?>
-                    <a href="update_event.php?event_id=<?= $ev['event_id'] ?>">Edit</a> 
+                    <a href="update.php?event_id=<?= $ev['event_id'] ?>">Edit</a> 
                     | 
-                    <a href="delete_event.php?event_id=<?= $ev['event_id'] ?>"
+                    <a href="delete.php?event_id=<?= $ev['event_id'] ?>"
                        onclick="return confirm('Are you sure?');">Delete</a>
                 <?php else: ?>
                     N/A

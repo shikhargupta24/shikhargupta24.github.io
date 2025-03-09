@@ -2,9 +2,10 @@
 session_start();
 require_once "config.php";
 
+
 if (isset($_SESSION['username'])) {
     //Already Logged in redirection
-    header("Location: ../index.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -36,6 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
 <head><title>Login</title></head>
+<?php if(isset($_SESSION['username'])) ?>
+     <div style="padding: 10px; border-bottom: 1px solid #ccc;">
+        <a href="registration.php">Register</a>
+    </div>
+    </section>
 <body>
     <h1>Login</h1>
     <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
