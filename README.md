@@ -3,7 +3,7 @@ Homework 2 for Computer Science 333
 
 Creating an advertisement for Wesleyan University using HTML and CSS
 
-Going by order of the the Names Keith,Rueh,Shikar its a 40/40/20 split. 
+Going by order of the the Names Keith,Rueh,Shikhar its a 40/40/20 split. 
 
 Link:https://wesleyanapp.infinityfreeapp.com/login.php
 
