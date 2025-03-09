@@ -5,7 +5,7 @@ require_once "config.php";
 
 if (isset($_SESSION['username'])) {
     // If user is already logged in, redirect to index.php (or wherever)
-    header("Location: ../index.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Log them in automatically
             $_SESSION['username'] = $username;
-            header("Location: ../index.php");
+            header("Location: index.php");
             exit;
         }
     }

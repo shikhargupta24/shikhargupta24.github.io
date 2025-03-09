@@ -1,6 +1,11 @@
 <?php
 session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +18,15 @@ session_start();
     <link href="style.css" rel="stylesheet">
 </head>
 
+<!-- Display of Logged in User-->
+<?php if (isset($_SESSION['username'])): ?>
+    <div style="padding: 10px; border-bottom: 1px solid #ccc;">
+        Logged in as: <strong><?= htmlspecialchars($_SESSION['username']) ?></strong>
+        | <a href="logout.php">Logout</a>
+        | <a href="create.php">Create Event</a>
+        | <a href="read.php">All Current Events</a>
+    </div>
+<?php endif; ?>
 
 <body>
     <header id ="Wesleyan Title">
@@ -60,11 +74,6 @@ session_start();
             <a href="https://www.wesleyan.edu/about/" target="Wesleyan Page">Wesleyan Main Page</a>
         </p>
     </div>
-    <?php if(isset($_SESSION['username'])) ?>
-     <div style="padding: 10px; border-bottom: 1px solid #ccc;">
-        Logged in as: <strong><?= htmlspecialchars($_SESSION['username']) ?></strong> 
-        | <a href="logout.php">Logout</a>
-    </div>
     </section>
 
     <div class="flex-container">
@@ -106,3 +115,6 @@ session_start();
             </p>
         </div>
     </div>
+</body>
+
+</html>
