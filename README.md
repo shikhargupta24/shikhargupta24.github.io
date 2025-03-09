@@ -3,8 +3,6 @@ Homework 2 for Computer Science 333
 
 Creating an advertisement for Wesleyan University using HTML and CSS
 
-Going by order of the the Names Keith,Rueh,Shikhar its a 40/40/20 split. 
-
 Link:https://wesleyanapp.infinityfreeapp.com/login.php
 
 Keith:
@@ -49,3 +47,4 @@ Click new again on the left side menu where the table are beneath the selected d
 after ward, to add in the data values, go on the events table and back to the sql button then copy and paste the INSERT data values
   then click go. 
 all of this code is found in the crudtables.sql
+Going by order of the the Names Keith,Rueh,Shikhar its a 40/40/20 split. 
