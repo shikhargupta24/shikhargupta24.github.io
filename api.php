@@ -4,7 +4,7 @@
 header("Content-Type: application/json");
 
 //Connection to PDO
-require_once '../web-app/config.php';
+require_once __DIR__ . '/../web-app/config.php';
 
 // CRUD Funtionality
 $method = $_SERVER['REQUEST_METHOD'];
@@ -34,20 +34,26 @@ function getEventById($pdo, $id) {
 }
 
 function createEvent($pdo, $data) {
-    $stmt = $pdo->prepare("INSERT INTO events (title, description, date) VALUES (?, ?, ?)");
-    if ($stmt->execute([$data['title'], $data['description'], $data['date']])) {
+    $stmt = $pdo->prepare("INSERT INTO events (event_name, event_date, location_p, username) VALUES (?, ?, ?, ?)");
+    if ($stmt->execute([$data['event_name'], $data['event_date'], $data['location_p'], $data['username']])) {
         return $pdo->lastInsertId();
     }
     return false;
 }
 
 function updateEvent($pdo, $id, $data) {
-    $stmt = $pdo->prepare("UPDATE events SET title = ?, description = ?, date = ? WHERE id = ?");
-    return $stmt->execute([$data['title'], $data['description'], $data['date'], $id]);
+    // Update columns using your custom format
+    $stmt = $pdo->prepare("UPDATE events SET event_name = ?, event_date = ?, location_p = ?, username = ? WHERE event_id = ?");
+    return $stmt->execute([
+        $data['event_name'], 
+        $data['event_date'], 
+        $data['location_p'], 
+        $data['username'], 
+        $id
+    ]);
 }
-
 function deleteEvent($pdo, $id) {
-    $stmt = $pdo->prepare("DELETE FROM events WHERE id = ?");
+    $stmt = $pdo->prepare("DELETE FROM events WHERE event_id = ?");
     return $stmt->execute([$id]);
 }
 
@@ -72,7 +78,7 @@ if ($resource == 'events') {
             break;
 
         case 'POST':
-            if (isset($input['title'], $input['description'], $input['date'])) {
+            if (isset($input['event_name'], $input['event_date'], $input['location_p'], $input['username'])) {
                 $eventId = createEvent($pdo, $input);
                 if ($eventId) {
                     http_response_code(201);
@@ -87,20 +93,21 @@ if ($resource == 'events') {
             }
             break;
 
-        case 'PUT':
-        case 'PATCH':
-            if ($id && isset($input['title'], $input['description'], $input['date'])) {
-                if (updateEvent($pdo, $id, $input)) {
-                    echo json_encode(['message' => 'Event updated']);
-                } else {
-                    http_response_code(404);
-                    echo json_encode(['error' => 'Event not found or not updated']);
-                }
-            } else {
-                http_response_code(400);
-                echo json_encode(['error' => 'Invalid input or missing event ID']);
-            }
-            break;
+            case 'PUT':
+                case 'PATCH':
+                    // Check if an ID is provided and if the payload contains all required keys
+                    if ($id && isset($input['event_name'], $input['event_date'], $input['location_p'], $input['username'])) {
+                        if (updateEvent($pdo, $id, $input)) {
+                            echo json_encode(['message' => 'Event updated']);
+                        } else {
+                            http_response_code(404);
+                            echo json_encode(['error' => 'Event not found or not updated']);
+                        }
+                    } else {
+                        http_response_code(400);
+                        echo json_encode(['error' => 'Invalid input or missing event ID']);
+                    }
+                    break;
 
         case 'DELETE':
             if ($id) {
