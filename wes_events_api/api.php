@@ -1,8 +1,14 @@
 <?php
 // wes_events_api/index.php
 
+
 header("Content-Type: application/json");
 
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Headers:*');
+
+header('Access-Control-Allow-Methods:POST,GET,OPTIONS,DELETE');
+header('Access-Control-Allow-Credentials: true');
 //Connection to PDO
 require_once __DIR__ . '/../web-app/config.php';
 
