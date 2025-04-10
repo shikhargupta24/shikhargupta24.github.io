@@ -55,6 +55,12 @@ Shikhar:
 ![image](https://github.com/user-attachments/assets/5a8e1aed-98f3-4c14-b325-2b8feedf81ae)
 
 
+Shortcomings: 
+We were unfortunately unable to fully connect the front end and the backend to be working. Had the front-end, and back-end working, but we need to do more research of this issue for the final project. We will meet with Professor Zimmeck, for assistance. 
+
+![image](https://github.com/user-attachments/assets/01e08711-94e8-4c6e-bed4-29a69b42b97c)
+![image](https://github.com/user-attachments/assets/2c540c08-d8c0-4a3f-95e0-584a3566e6d2)
+
 
 
 
@@ -63,3 +69,6 @@ Shikhar:
 Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+
+
+Sources: Used ChatGPT to assist with the product design, code functionality, and problem solving skills to navigate through new technologies
