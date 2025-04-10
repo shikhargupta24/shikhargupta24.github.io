@@ -1,5 +1,5 @@
 # Wesleyan Events App
- ("Additional Note that the REST API is in the folder wes_events_api") 35/35/30 Split Keith, Shikhar, Rue
+ ("Additional Note that the REST API is in the folder wes_events_api" Also Postman Results below) 35/35/30 Split Keith, Shikhar, Rue
 A React Native application for managing and viewing events at Wesleyan University.
 
 ## Features
@@ -42,6 +42,19 @@ To learn more about developing your project with Expo, look at the following res
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+
+Keith:
+![image](https://github.com/user-attachments/assets/332937e6-109b-47bd-8e8e-e1513c693547)
+
+Rue:
+![image](https://github.com/user-attachments/assets/2049aba0-dbcb-4d35-be82-29bc725a447b)
+
+Shikhar:
+![image](https://github.com/user-attachments/assets/c540967c-c05b-48d8-b00f-6a0540d74ac6)
+
+
+
 
 ## Join the community
 
