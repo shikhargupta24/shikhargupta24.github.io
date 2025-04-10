@@ -1,6 +1,13 @@
-# Welcome to your Expo app 👋
+# Wesleyan Events App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application for managing and viewing events at Wesleyan University.
+
+## Features
+
+- User authentication (login/register)
+- View, create, edit, and delete events
+- Modern and responsive UI
+- Offline support with hardcoded events
 
 ## Get started
 
@@ -13,7 +20,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 2. Start the app
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
 In the output, you'll find options to open the app in a
@@ -23,17 +30,11 @@ In the output, you'll find options to open the app in a
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- `src/screens/`: Contains all the screen components
+- `src/navigation/`: Navigation configuration
+- `src/constants/`: Shared styles and configuration
 
 ## Learn more
 
@@ -47,4 +48,3 @@ To learn more about developing your project with Expo, look at the following res
 Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

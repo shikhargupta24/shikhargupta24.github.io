@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #fdf9f9;
+
+  }
+  header {
+    background-color: #7d1919;
+    margin: 0;
+    padding: 20px; 
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xxx-large;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-family: cursive;
+}
+
+
+
+.navbar {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(224, 166, 166);
+  padding: 10px;
+  color: white;
+  text-align: right;
+}
+
+.navbar a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #7d1919;
+  font-weight: bold;
+}
+
+
+
+ .box{text-align: left;
+    padding-left: 15px;
+    background-color: #cfbcbc;
+
+
+  }
+
+  .box1 {
+    background-color:#cfbcbc;
+  }
+
+
+  #Aboutme{padding: 10px}
+
+#Photos{
+  background-color: #e2caca;
+  padding: 15px;
+
+}
+#NotableAlum {background-color: #885f5f
+  ;
+}
+
+#Clubs { background-color: #885f5f;}
+
+a{color:#000000;
+padding:5px;
+}
+
+#flex{
+  align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Box Styling */
+.box {
+    flex: 1 1 300px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+} 
