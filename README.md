@@ -1,5 +1,5 @@
 # Wesleyan Events App
-
+ ("Additional Note that the REST API is in the folder wes_events_api") 35/35/30 Split Keith, Shikhar, Rue
 A React Native application for managing and viewing events at Wesleyan University.
 
 ## Features
