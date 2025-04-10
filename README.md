@@ -56,7 +56,7 @@ Shikhar:
 
 
 Shortcomings: 
-We were unfortunately unable to fully connect the front end and the backend to be working. Had the front-end, and back-end working, but we need to do more research of this issue for the final project. We will meet with Professor Zimmeck, for assistance. 
+We were unfortunately unable to fully connect the front end and the backend to be working. Had the front-end, and back-end working, but we need to do more research of this issue for the final project. We weren't able to connect the front end with the back end for the events to be fully updated unfortunately. 
 
 ![image](https://github.com/user-attachments/assets/01e08711-94e8-4c6e-bed4-29a69b42b97c)
 ![image](https://github.com/user-attachments/assets/7a4889dc-9891-4eb5-af64-959a15c81072)
