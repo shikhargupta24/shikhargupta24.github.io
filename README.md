@@ -23,6 +23,8 @@ A React Native application for managing and viewing events at Wesleyan Universit
    npx expo start
    ```
 
+3. If number 2 doesn't work try npx expp start --android
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
