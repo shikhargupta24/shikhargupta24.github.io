@@ -48,10 +48,10 @@ Keith:
 ![image](https://github.com/user-attachments/assets/332937e6-109b-47bd-8e8e-e1513c693547)
 
 Rue:
-![image](https://github.com/user-attachments/assets/2049aba0-dbcb-4d35-be82-29bc725a447b)
+
 
 Shikhar:
-![image](https://github.com/user-attachments/assets/c540967c-c05b-48d8-b00f-6a0540d74ac6)
+
 
 
 
